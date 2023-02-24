@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+header, nav, aside, section, article, footer {
+    border: 1px solid black;
+}
+
+nav, article {
+    width: 60%;
+}
+
+p {
+    text-align: center;
+}
+header, section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+aside, section {
+    width: 50%;
+}
+
+.multimedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+
+section#flexing > div {
+    width: 100%;
+}
+
+.justify {
+    display: flex;
+    justify-content: center;
+}
+
+.align {
+    height: 60px;
+    border: 1px solid orangered;
+
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cuadrado {
+    width: fit-content;
+    background-color: orangered;
+}
+
+section#scripts {
+    gap: 1rem;
+}
+
+section#scripts > div {
+    width: 50%;
+
+    display: flex;
+    flex-direction:column ;
+    border: 1px solid orangered;
+}
+
+

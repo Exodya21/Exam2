@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            width: 100%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>
+            header
+        </p>
+        <nav>
+            <p>
+                nav
+            </p>
+        </nav>
+    </header>
+    <div class="container">
+        <aside>
+            <p>
+                aside
+            </p>
+        </aside>
+        <section>
+            <P>
+                section
+            </P>
+            <article>
+                <p>
+                    article
+                </p>
+            </article>
+        </section>
+    </div>
+    <footer>
+       <p>
+           footer
+       </p>
+    </footer>
+
+    <section style=" width: 100%; gap: 3rem; margin-top: 3rem;">
+        <div class="multimedia">
+            <div>
+                <p>video</p>
+                <video id="video" width="320" height="240" controls="controls" autoplay="autoplay"
+                loop="loop">
+                    <source src="./multimedia/olas.mp4" type="video/mp4">
+                    <track src="subtitles_en.vtt" kind="subtitles" srclang="es" label="Spanish">
+                    Tu navegador no es compatible con la etiqueta vídeo.
+                </video>
+            </div>
+            <div>
+                <p>audio</p>
+                <audio controls="controls" >
+                    <source src="./multimedia/anime-cat-girl-6731.mp3" type="audio/mpeg">
+                    Tu navegador no es compatible con la etiqueta audio.
+                </audio>
+            </div>
+        </div>
+
+        <div>
+            <p>Con Iframes</p>
+            <div class="multimedia">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oG7RElF0vnU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d11974.046422406269!2d2.1428520271544556!3d41.384694617733906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e2!4m5!1s0x12a4987c34a1f2c5%3A0xe0acefdd7f68a4b3!2sCarrer%20de%20Caballero%2C%2076%2C%2008029%20Barcelona!3m2!1d41.384149!2d2.1387521!4m5!1s0x12a4a28b479d7183%3A0xcefe983e6a9f65ac!2sUniversitat%2C%2008007%20Barcelona!3m2!1d41.385708!2d2.164581!5e0!3m2!1ses!2ses!4v1675153425949!5m2!1ses!2ses" width="50%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section id="flexing" style=" margin-top: 3rem; margin-bottom: 1rem; width: 100%;">
+        <div class="justify">
+            <div class="cuadrado">justify</div>
+        </div>
+        <div class="align">
+            <div class="cuadrado">aling</div>
+        </div>
+        <div class="row">
+            <div class="cuadrado">row</div>
+            <div class="cuadrado">row</div>
+        </div>
+        <div class="around">
+            <div class="cuadrado">around</div>
+            <div class="cuadrado">around</div>
+        </div>
+        <div class="between">
+            <div class="cuadrado">between</div>
+            <div class="cuadrado">between</div>
+        </div>
+    </section>
+
+    <section id="scripts">
+        <div>
+            <div id="prompt">
+                Mensaje por prompt:
+            </div>
+            <button id="promptBnt" >¡Click Me!</button>
+        </div>
+        <div>
+            <div id="isParResp">
+               Es par o impar
+            </div>
+            <input type="number" id="isPar">
+            <button id="isParBnt" >¡Click Me!</button>
+        </div>
+        <div>
+            <div>Cuenta atras</div>
+            <button id="cuentaAtrasBtn" >¡Click Me!</button>
+            <button id="clean" >Clear</button>
+            <div id="cuentaAtras">&nbsp</div>
+        </div>
+        <div>
+            <div id="palindromoRes">
+                ¿Es palíndromo?
+             </div>
+             <input type="text" id="isPalindromo">
+             <button id="isPalindromoBnt" >¡Click Me!</button>
+        </div>
+    </section>
+
+    <script src="prompt.js"></script>
+</body>
+</html>
